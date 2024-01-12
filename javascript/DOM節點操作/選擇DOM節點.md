@@ -183,3 +183,21 @@ p.innerText = "Hello <span>World</span>!";
 Output:
 
 ![Alt text](<innerText-output.png>)
+
+## Node.hasChildNodes() 判斷是否包含子節點
+返回布林值
+
+```html
+<ul>
+  <li></li>
+</ul>
+<div></div>
+```
+
+```js
+const ul = document.querySelector('ul');
+console.log(ul.hasChildNodes()); // true
+
+const div = document.querySelector('div');
+console.log(div.hasChildNodes()); // false
+```
